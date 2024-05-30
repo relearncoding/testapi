@@ -14,3 +14,7 @@ def read_root():
 @app.get("/number")
 def read_root():
     return 90
+
+@app.get("/projectid")
+def read_root():
+    return "PW/90123"
