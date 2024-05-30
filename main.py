@@ -1,8 +1,16 @@
+from typing import Union
 from fastapi import FastAPI
 
-app = FASTAPI()
-
+app = FastAPI()
 
 @app.get("/")
-def root():
-    return {"Hello": "Welcome!"}
+def read_root():
+    return {"Hello World"}
+
+@app.get("/decision")
+def read_root():
+    return {'1'}
+
+@app.get("/number")
+def read_root():
+    return {'90'}
